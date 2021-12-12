@@ -70,7 +70,9 @@ nav {
     background: rgb(254,227,83);
     background: linear-gradient(141deg, rgba(254,227,83,1) 0%, rgba(244,202,37,1) 100%);
     border: none;
-    border-radius: 1.3rem
+    border-radius: 1.3rem;
+    box-shadow: 1px 1px 5px #faffa8 inset;
+
 }
 
 .nav__item {
@@ -108,4 +110,30 @@ nav {
     margin-top: 3rem;
     visibility: visible;
     opacity: 1;
+}
+
+main {
+    margin: 0 auto 2rem;
+    width: 70rem;
+}
+
+.left-panel {
+    width: 50%;
+    color: hsl(240deg 8% 12%);
+}
+
+.left-panel h2 {
+    color: hsl(15deg 100% 59%);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+.left-panel h1 {
+    margin-left: -0.28rem;
+    font-weight: 600;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 5rem;
+    letter-spacing: -4px;
+    line-height: 6rem;
 }
