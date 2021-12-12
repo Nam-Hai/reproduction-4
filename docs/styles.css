@@ -3,13 +3,14 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "arial";
+    list-style: none;
 }
 
 nav {
     margin: 0 auto 2rem;
-    width: 50rem;
+    width: 70rem;
     height: 5rem;
-    border: 1px solid salmon;
+    border-bottom: 1px solid rgb(201 201 201);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -20,10 +21,91 @@ nav {
 
 .nav__home {
     font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
+.theme {
+    display: flex;
+    flex-direction: row;
+    width: 4rem;
+    height: 2rem;
+    padding: 0.2rem;
+
+    margin-left: 1rem;
+    justify-content: space-between;
+    position: relative;
+    border: 1px solid rgb(201 201 201);
+    border-radius: 1rem;
+}
+
+.theme svg {
+    border-radius: 50%;
+    padding: 0.2rem;
+}
+
+.theme-active {
+    background-color: hsl(16deg 100% 58%);
+    box-shadow: 0px 1px 3px hsl(16deg 100% 58%);
+}
+.theme-active path {    
+    stroke: white
+}
+.theme-active circle{
+    stroke: white;
+}
+
 
 .nav__items {
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 35rem;
+    justify-content: space-between;
+}
+
+.contact {
+    padding: 0.8rem 2rem;
+    background: rgb(254,227,83);
+    background: linear-gradient(141deg, rgba(254,227,83,1) 0%, rgba(244,202,37,1) 100%);
+    border: none;
+    border-radius: 1.3rem
+}
+
+.nav__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav__item svg {
+    margin-left: 0.3rem;
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+.solutions-items {
+    position: absolute;
+    font-weight: 400;
+    top: 0;
+    left: -1rem;
+    margin-top: 2.3rem;
+    padding: 1rem;
+    width: 10rem;
+    background-color: white;
+    -webkit-box-shadow: 0px 0.2rem 20px 2px rgb(0 0 0 / 6%);; 
+    box-shadow: 0px 0.2rem 20px 2px rgb(0 0 0 / 6%);;
+    border-radius: 0.5rem;
+    visibility: hidden;
+    opacity: 0;
+    transition-duration: 200ms;
+}
+
+.solutions-items-active {
+    margin-top: 3rem;
+    visibility: visible;
+    opacity: 1;
 }
