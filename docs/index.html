@@ -9,16 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 </head>
-<body>
-    
-
-
-    <nav>
+<body theme="light">
+    <nav class="max-width">
         <div class="nav__home">
             <div class="clubspace">Clubspace</div>
             <div class="theme">
-                <svg class="theme-active" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" fill="white"><title>Sunny</title><path fill="none" stroke="white" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M256 48v48M256 416v48M403.08 108.92l-33.94 33.94M142.86 369.14l-33.94 33.94M464 256h-48M96 256H48M403.08 403.08l-33.94-33.94M142.86 142.86l-33.94-33.94"/><circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Moon</title><path d="M160 136c0-30.62 4.51-61.61 16-88C99.57 81.27 48 159.32 48 248c0 119.29 96.71 216 216 216 88.68 0 166.73-51.57 200-128-26.39 11.49-57.38 16-88 16-119.29 0-216-96.71-216-216z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                <svg id="light" class="theme-active ionicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="white"><title>Sunny</title><path fill="none" stroke="white" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M256 48v48M256 416v48M403.08 108.92l-33.94 33.94M142.86 369.14l-33.94 33.94M464 256h-48M96 256H48M403.08 403.08l-33.94-33.94M142.86 142.86l-33.94-33.94"/><circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/></svg>
+                <svg id="dark" class="ionicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>Moon</title><path d="M160 136c0-30.62 4.51-61.61 16-88C99.57 81.27 48 159.32 48 248c0 119.29 96.71 216 216 216 88.68 0 166.73-51.57 200-128-26.39 11.49-57.38 16-88 16-119.29 0-216-96.71-216-216z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
             </div>
         </div>
         <div class="nav__items">
@@ -40,7 +37,7 @@
         <button class="contact">Contact</button>
     </nav>
 
-    <main>
+    <main class="max-width">
         <div class="left-panel">
             <h2>HEADLESS ARCHITECTURE</h2>
             <h1>BIND CONNECT GROW</h1>
@@ -76,6 +73,39 @@
         </div>
     </main>
 
+    <footer >
+        <div class="footer-container max-width">
+            <div class="solutions-section">
+                <h5>Solutions</h5>
+                <p>A fully-integrated commerce and subscription.</p>
+            </div>
+            <div class="separator"></div>
+            <div class="footer-items">
+                <div class="footer-item">
+                    <img src="cloud-upload-outline.svg" alt="cloud">
+                    <h6>Hosted Checkout</h6>
+                    <button>Learn more +</button>
+                </div>
+                <div class="footer-item">
+                    <img src="camera-outline.svg" alt="commerce">
+                    <h6>Headless Commerce</h6>
+                    <button>Learn more +</button>
+                </div>
+                <div class="footer-item">
+                    <img src="card-outline.svg" alt="billing">
+                    <h6>Flexing Billing</h6>
+                    <button>Learn more +</button>
+                </div>
+                <div class="footer-item">
+                    <img src="hand-left-outline.svg" alt="info">
+                    <h6>Publishers Info</h6>
+                    <button>Learn more +</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
+
